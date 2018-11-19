@@ -6,6 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                git commit -m "Jenkinsfile"
             }
         }
         stage('Test') {
