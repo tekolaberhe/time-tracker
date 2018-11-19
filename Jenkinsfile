@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                git commit -m "Jenkinsfile"
+                echo "Path = ${PATH}"
             }
         }
         stage('Test') {
